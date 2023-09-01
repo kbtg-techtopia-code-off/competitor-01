@@ -49,6 +49,11 @@ def is_win(player, opponent):
         or (player == 'scissor' and opponent == 'paper') or (player == 'paper' and opponent == 'rock'):
         return True
 
+
+
+
+
+
 while True:
     result = play()
 
