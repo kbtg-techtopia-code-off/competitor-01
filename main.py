@@ -10,9 +10,14 @@ wins = 0
 losses = 0
 played = 0
 
+choices = ['rock','paper','scissor'] 
+
 def play():
     user = input("Please input your choice: ")
-    computer = random.choice(['rock','paper','scissor'])
+    if user not in choices:
+        print("Please input valid choice")
+        return
+    computer = random.choice(choices)
     print(f"The computer choice : {computer}")
     print(f"The player choice : {user}")
 
